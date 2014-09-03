@@ -54,8 +54,12 @@ To read
 
 * [This is the official reference guide of Apache HBase™](http://hbase.apache.org/book.html)
 * [HappyBase is a developer-friendly Python library to interact with Apache HBase](http://happybase.readthedocs.org/en/latest/)
-* [Cascading 2.5 User Guide](http://docs.cascading.org/cascading/2.5/userguide/htmlsingle/)
 * [Hadoop version support matrix to HBase](http://hbase.apache.org/book.html#hadoop)
+* [Cascading 2.5 User Guide](http://docs.cascading.org/cascading/2.5/userguide/htmlsingle/)
+* [twitter/scalding/Getting Started](https://github.com/twitter/scalding/wiki/Getting-Started) wiki
+* [twitter/scalding/Type safe api reference](https://github.com/twitter/scalding/wiki/Type-safe-api-reference) wiki
+* [Scalding Unit](https://github.com/scalding-io/ScaldingUnit)
+* [kianwilcox/hbase-scalding](https://github.com/kianwilcox/hbase-scalding/blob/master/src/main/scala/jobs/TestJob.scala)
 
 Copyright and license
 =====================
