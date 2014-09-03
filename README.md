@@ -28,6 +28,21 @@ The `assembly` command above runs the test suite - but you can also run this man
 
     $ ./sbt test
 
+Scalding local run
+==================
+
+    ./scripts/scald.rb --local ~/Projects/hbase-cascading-test1/src/main/scala/com/ivan/hadoop/scalding/MinMaxAvgJob.scala --input ~/Projects/hbase-cascading-test1/data/data-den-2014-09-03 --output ~/Projects/hbase-cascading-test1/data/data-den-2014-09-03.out
+
+Hadoop / HBase run
+==================
+
+    TODO
+
+TODO
+====
+
+* do not produce 3 new pipes to do aggregration. use custom aggregator instead.
+
 See also
 ========
 

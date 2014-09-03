@@ -15,6 +15,6 @@ connection.create_table('match', {'data': dict()})
 table = connection.table('match')
 for line in lines:
   t = tuple(line.split())
-  table.put(t[0], {'data:score': t[2], 'data:density': t[3]}, timestamp = int(t[1]) * 1000)
+  table.put(t[0], {'data:score': t[2], 'data:density': t[3]}, timestamp = int(t[1]))
 
 print 'All data successfully written into <Match> table.'
