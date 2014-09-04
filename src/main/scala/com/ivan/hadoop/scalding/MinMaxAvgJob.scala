@@ -3,6 +3,8 @@ package com.ivan.hadoop.scalding
 import com.twitter.scalding._
 
 class MinMaxAvgJob(args : Args) extends Job(args) {
+  Class.forName("cascading.scheme.util.DelimitedParser")
+
   val source = Csv( args("input"), " ", ('id, 'timestamp, 'value) )
   val sink = Tsv( args("output") )
 
@@ -18,9 +20,8 @@ class MinMaxAvgJob(args : Args) extends Job(args) {
 
   // left join 'm1, 'm2, 'm3 pipes back into single one
   // and write down the result
-  val p4 =
-    p1.leftJoinWithSmaller('m1 -> 'm2, p2)
-      .leftJoinWithSmaller('m2 -> 'm3, p3)
-      .project('m1, 'min, 'avg, 'max)
-      .write(sink)
+  p1.leftJoinWithSmaller('m1 -> 'm2, p2)
+    .leftJoinWithSmaller('m2 -> 'm3, p3)
+    .project('m1, 'min, 'avg, 'max)
+    .write(sink)
 }

@@ -9,7 +9,7 @@ class MinMaxAvgTest extends Specification {
     JobTest("com.ivan.hadoop.scalding.MinMaxAvgJob").
       arg("input", "inputFile").
       arg("output", "outputFile").
-      source(Csv( "inputFile"), List(
+      source(Csv( "inputFile" ), List(
         ("gpi.mech.battle.14729", 1409691301000L, 0.9607714118860488),
         ("gpi.mech.battle.14730", 1409691301000L, 1.0369443119636337),
         ("gpi.mech.battle.14756", 1409694900000L, 0.9481745203307692),
